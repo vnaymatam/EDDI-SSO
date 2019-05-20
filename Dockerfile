@@ -10,7 +10,7 @@ RUN mkdir -p eddi/login/
 
 RUN cp -a keycloak/common eddi
 
-ADD login/ /eddi/login/
+COPY /login/ /eddi/login
 
 ENTRYPOINT [ "/opt/jboss/tools/docker-entrypoint.sh" ]
 
