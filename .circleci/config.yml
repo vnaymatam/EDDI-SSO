@@ -1,0 +1,18 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: docker:18-git
+    working_directory: ~/ci-build/
+    steps:
+      - checkout
+      - setup_remote_docker
+
+      - run: |
+          docker login -u $DOCKER_USER -p $DOCKER_PASS
+
+          docker build -t labsai/eddi-keycloak:b$CIRCLE_BUILD_NUM .
+          docker push labsai/eddi-keycloak:b$CIRCLE_BUILD_NUM
+
+          docker build -t labsai/eddi-keycloak:latest .
+          docker push labsai/eddi-keycloak:latest
