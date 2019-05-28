@@ -99,8 +99,8 @@ label {
  */
 .cover {
   padding: 25px 60px;
-
 }
+
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: 700;
@@ -170,37 +170,47 @@ div.kc-logo-text span {
 }
 
 /*
- * Footer
- */
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255, 255, 255, .5);
-}
-
-
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
+	Media screens for responsive design
+*/
+@media (min-width: 769px) {
   .site-wrapper-inner {
     vertical-align: middle; /* Start the vertical centering */
   }
-  .mastfoot,
   .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    width: 100%;
   }
 }
 
 @media (min-width: 992px) {
-  .mastfoot,
   .cover-container {
     width: 400px;
   }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	.social-buttons > .col-md-6:first-child{
+		padding: 0px;
+	}
+
+	.social-buttons > .col-md-6:last-child{
+		padding: 0px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.cover-container {
+		width: 100%;
+	}
+	
+	.cover {
+		padding: 15px;
+	}
+	
+	.social-buttons > .col-md-6:first-child{
+		padding: 0px;
+	}
+
+	.social-buttons > .col-md-6:last-child{
+		padding: 0px;
+	}
 }
