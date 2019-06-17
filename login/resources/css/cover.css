@@ -154,15 +154,15 @@ label {
 }
 
 div.kc-logo-text {
-    background-image: url(../img/6c92833916316a45260533d7d2d50912.png);
-    background-repeat: no-repeat;
+    /*background-image: url(../img/6c92833916316a45260533d7d2d50912.png);
+    background-repeat: no-repeat;*/
     height: 63px;
     width: 55px;
     margin: 0 auto;
 }
 
 div.kc-logo-text span {
-    display: none;
+    display: block;
 }
 
 .kcFormOptionsClass {
