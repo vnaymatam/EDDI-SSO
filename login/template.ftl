@@ -38,7 +38,7 @@
     <div id="kc-header" class="${properties.kcHeaderClass!}">
       <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">
     	<!-- ${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div> -->
-	<div class="kc-logo-text"><span><img src="${url.resourcesPath}/images/logo.png" alt="EDDI" /></span></div>
+	<div class="kc-logo-text"><span><img src="${url.resourcesPath}/img/eddi_logo.png" alt="EDDI" /></span></div>
     </div>
  
     <div class="${properties.kcFormCardClass!} <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
