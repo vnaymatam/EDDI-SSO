@@ -170,6 +170,15 @@ div.kc-logo-text span {
 }
 
 /*
+ * Footer
+ */
+.footer {
+	margin-top: 15px;
+    margin-bottom: 15px;
+	text-align: center;
+}
+
+/*
 	Media screens for responsive design
 */
 @media (min-width: 769px) {
