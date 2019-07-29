@@ -170,9 +170,18 @@ div.kc-logo-text span {
 }
 
 /*
-	Media screens for responsive design
+ * Footer
+ */
+.footer {
+	margin-top: 15px;
+    margin-bottom: 15px;
+	text-align: center;
+}
+
+/*
+* Media screens for responsive design
 */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .site-wrapper-inner {
     vertical-align: middle; /* Start the vertical centering */
   }
