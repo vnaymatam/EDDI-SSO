@@ -5,7 +5,8 @@
     <#elseif section = "form">
         <form id="kc-register-form" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
             <div class="form-group col-md-12">
-				<h4>${msg("registerTitle")}</h4>	
+				<h4>${msg("registerTitle")}</h4>
+				<p>By signing up to our service you confirm that you have read, understood and agree to our <a href="https://labs.ai/terms-of-service" target="_blank">terms and conditions</a></p>
 			</div>
 			<div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('firstName',properties.kcFormGroupErrorClass!)}">
                 <div class="${properties.kcLabelWrapperClass!}">
