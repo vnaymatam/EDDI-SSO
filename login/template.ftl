@@ -67,7 +67,11 @@
           </#if>
         </div>
       </div>
-
+	<div class="footer">
+		<div class="container">
+			<span class="text-muted">Provided by <a href="https://www.labs.ai" alt="LABS.AI" target="_blank">LABS.AI</a></span>
+		</div>
+	</div>
     </div>
   </div>
 </body>
