@@ -1,5 +1,6 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout; section>
+<div id="kc-error-div" class="${properties.kcFormClass!}">
     <#if section = "header">
         ${msg("pageExpiredTitle")}
     <#elseif section = "form">
@@ -8,4 +9,5 @@
             ${msg("pageExpiredMsg2")} <a id="loginContinueLink" href="${url.loginAction}">${msg("doClickHere")}</a> .
         </p>
     </#if>
+</div>
 </@layout.registrationLayout>
