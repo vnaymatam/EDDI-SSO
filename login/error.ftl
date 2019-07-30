@@ -1,5 +1,6 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout displayMessage=false; section>
+<div id="kc-error-div" class="${properties.kcFormClass!}">
     <#if section = "header">
         ${msg("errorTitle")}
     <#elseif section = "form">
@@ -10,4 +11,5 @@
             </#if>
         </div>
     </#if>
+</div>
 </@layout.registrationLayout>
