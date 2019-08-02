@@ -15,6 +15,9 @@
 					<div class="${properties.kcFormSocialAccountListLinkClass!}"><a href="${p.loginUrl}" id="zocial-${p.alias}" class="btn btn-default zocial ${p.providerId}"><span>${p.displayName}</span></a></div>
 				</#list>
 			</div>
+			<div class="text-center">
+				<h6 class="text-muted">By using a social media login, you confirm that you have read, understood and agree to our <a href="https://labs.ai/terms-of-service" target="_blank" alt="EDDI TnC">terms and conditions</a></h6>
+			</div>
 			</#if>
             <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
 				<div class="${properties.kcFormGroupClass!}">
