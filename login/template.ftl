@@ -36,9 +36,10 @@
   <div class="${properties.kcLoginClass!}">
  
     <div id="kc-header" class="${properties.kcHeaderClass!}">
-      <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">
-    	<!-- ${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div> -->
-	<div class="kc-logo-text"><span><img src="${url.resourcesPath}/img/eddi_logo.png" alt="EDDI" /></span></div>
+		<div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">
+			<!--${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}-->
+			<div class="kc-logo-text"><span><img src="${url.resourcesPath}/img/eddi_logo.png" alt="EDDI" /></span></div>
+		</div>
     </div>
  
     <div class="${properties.kcFormCardClass!} <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
@@ -67,13 +68,13 @@
           </#if>
         </div>
       </div>
+	</div>
 	<div class="footer">
 		<div class="container">
 			<span class="text-muted">Provided by <a href="https://www.labs.ai" alt="LABS.AI" target="_blank">LABS.AI</a></span>
 		</div>
 	</div>
     </div>
-  </div>
 </body>
 </html>
 </#macro>
